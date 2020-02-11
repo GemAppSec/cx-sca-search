@@ -18,6 +18,10 @@ The search tool searches results that are:
 The tool is a PowerShell script and can be run from any Windows machine.
 The search tool connects to the Checkmarx Database and therefore needs network connectivity to the database server. The tool supports both Integrated Authentication as well as SQLServer Authentication to the Checkmarx database.
 
+### Pre-requisites
+- PowerShell v5+
+- SqlServer powershell module "Invoke-SqlCmd2". If not already installed, run "Install-Module -Name Invoke-SqlCmd2" as an administrator prior to running this script.
+
 ## Configuration file
 
 The cx_sca_search_config.json config file contains the following configuration elements:
