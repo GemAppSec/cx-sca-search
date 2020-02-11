@@ -18,6 +18,17 @@ The search tool searches results that are:
 The tool is a PowerShell script and can be run from any Windows machine.
 The search tool connects to the Checkmarx Database and therefore needs network connectivity to the database server. The tool supports both Integrated Authentication as well as SQLServer Authentication to the Checkmarx database.
 
+## Configuration file
+
+The cx_sca_search_config.json config file contains the following configuration elements:
+
+| Element | Notes |
+| ------ | ------ |
+| cx -> db -> instance | The Checkmarx SQLServer Database instance to connect to. Ex. localhost\\SQLExpress |
+| cx -> db -> username | Database account to use to connect to the Checkmarx database. Optional: Leave empty if using Integrated Authentication. |
+| cx -> db -> password | Password for the database account to connect to the Checkmarx database. Leave empty if using Integrated Authentication. |
+| log -> jsonDirectory | Directory to which JSON output will be written, if the -json parameter is used (see usage).  |
+
 ## Usage
 ```
 cx-sca-search.ps1 -lib <libraryName> [-dbUser <dbAccount>] [-dbPass <dbPassword>] [-group <Project|Team>] [-json] [-grid] 
