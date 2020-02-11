@@ -95,6 +95,37 @@ Team                               Project     Library Version Found In Scan
 \CxServer\Americas\Software\DevOps DVNA_master logform 2.1.2   2/11/2020 6:34:29 PM
 ```
 
+```
+PS C:\shared\workspace\checkmarx\cx-sca-search> .\cx-sca-search.ps1 -lib npmlog -json
+2/11/2020 7:35:16 PM: Loading configuration from C:\shared\workspace\checkmarx\cx-sca-search\cx_sca_search_config.json
+2/11/2020 7:35:16 PM: -----------------------------------------
+2/11/2020 7:35:16 PM: Checkmarx SCA Search
+2/11/2020 7:35:16 PM: Database: localhost\SQLExpress
+2/11/2020 7:35:16 PM: Using Integrated Authentication to SQLServer
+2/11/2020 7:35:16 PM: -----------------------------------------
+2/11/2020 7:35:16 PM: Found [2] results for library 'npmlog'.
+2/11/2020 7:35:16 PM: Number of Teams that use library : [1]
+2/11/2020 7:35:16 PM: Number of Projects that use library : [1]
+2/11/2020 7:35:16 PM: Number of Libraries that matched : [1]
+2/11/2020 7:35:16 PM: Generating JSON from results...
+[
+    {
+        "Team":  "\\CxServer\\Americas\\Software\\DevOps",
+        "Project":  "DVNA_master",
+        "Library":  "npmlog",
+        "Version":  "4.1.2",
+        "Found In Scan":  "02/07/2020 21:53:07"
+    },
+    {
+        "Team":  "\\CxServer\\Americas\\Software\\DevOps",
+        "Project":  "DVNA_master",
+        "Library":  "npmlog",
+        "Version":  "4.1.2",
+        "Found In Scan":  "02/11/2020 18:34:29"
+    }
+]
+```
+
 License
 ----
 
