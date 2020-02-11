@@ -41,7 +41,7 @@ cx-sca-search.ps1 -lib <libraryName> [-dbUser <dbAccount>] [-dbPass <dbPassword>
 
 | Parameter | Required? | Notes |
 | ------ | ------ | ------ |
-| lib | Yes | Library to search for. Can be full library name or partial using wildcards. *Examples: log4net, log4\*, \*unit\* etc.* |
+| lib | Yes | Library to search for. Accepts wildcards. Can be full library name or partial using wildcards. *Examples: log4net, log4\*, \*unit\* etc.* |
 | dbUser | No | Database account that can read from the Checkmarx database. Skip if using Integrated Authentication to the Checkmarx database |
 | dbPass | Yes, if -dbUser is provided. Otherwise, not required. | Password for the database account used in the -dbUser parameter. Skip if using Integrated Authentication to the Checkmarx database |
 | group | No | Grouping to use while displaying results on the console. Valid values are [Team or Project]. Ignored if used in conjunction with the -json flag. |
