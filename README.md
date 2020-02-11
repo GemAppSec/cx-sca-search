@@ -17,7 +17,7 @@ The search tool searches results that are:
 # Execution
 
 The tool is a PowerShell script and can be run from any Windows machine.
-The search tool connects to the Checkmarx Database and therefore needs network connectivity to the database server. The tool supports both Integrated Authentication as well as SQLServer Authentication to the Checkmarx database.
+The search tool connects to the Checkmarx Database and therefore needs network connectivity to the database server. The tool supports  Integrated Authentication as well as SQLServer Authentication to the Checkmarx database.
 
 ### Pre-requisites
 - PowerShell v5+
